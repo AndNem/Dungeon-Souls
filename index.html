@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <title>Dungeon Souls</title>
+    <!-- шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- мои стили -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="start" onclick="mainAnimateLoop()">
+        <h2>Старт</h2>
+      </button>
+
+      <canvas></canvas>
+
+      <div class="game-lose">
+        <h2 class="game-lose_title">Вы проиграли</h2>
+        <button onclick="location.reload()">
+          <h2>начать сначала</h2>
+        </button>
+      </div>
+
+      <div class="game-win">
+        <h2 class="game-win_title">Вы победили</h2>
+        <button onclick="location.reload()">
+          <h2>начать сначала</h2>
+      </div>
+    </div>
+    <script src="js/sounds.js"></script>
+    <script src="js/dataRooms.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/classes/Sprite.js"></script>
+    <script src="js/classes/Block.js"></script>
+    <script src="js/classes/Mage.js"></script>
+    <script src="js/classes/Fire.js"></script>
+    <script src="js/classes/FireBang.js"></script>
+    <script src="js/classes/Princes.js"></script>
+    <script src="js/classes/Medusa.js"></script>
+    <script src="js/classes/Hatch.js"></script>
+    <script src="js/classes/Torch.js"></script>
+    <script src="js/classes/Lava.js"></script>
+    <script src="js/classes/LavaDrop.js"></script>
+    <script src="js/classes/LavaBlob.js"></script>
+    <script src="js/classes/LavaSpray.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
